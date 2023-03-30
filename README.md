@@ -10,10 +10,6 @@ Number of emotions are six(happy, embarrassed, anger, anxiety, heartbroken, sad)
 If you want to use it, you can use the [model](https://huggingface.co/hyeok212/sentiment) as follows.  
 
 ```python
-Cancel changes
-from transformers import AutoModelForCausalLM, AutoTokenizer
-import torch
-
 from flask import Flask, request
 
 app = Flask(__name__)
