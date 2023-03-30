@@ -4,12 +4,13 @@ Our model was developed using Pytorch and KOBERT.
 
 ## Test sentiment analysis
 
-This model shows the maximum two emotions detected and the percentage of the responses to one conversation.
+This model shows the maximum two emotions(in 6 emotions) detected and the percentage of the responses to one conversation.
+emotions are [happy,embarrassed,anger,anxiety,heartbroken,sad
 
 If you want to use it, you can use the [model](https://huggingface.co/hyeok212/sentiment) as follows.  
 
 ```python
-
+Cancel changes
 from transformers import AutoModelForCausalLM, AutoTokenizer
 import torch
 
@@ -131,7 +132,7 @@ def predict(arg):
         return 'null'    
     
     
-    #emotion_list = dict({'0':'기쁨','1':'당황','2':'분노','3':'불안','4':'상처','5':'슬픔'})
+    #emotion_list = '0':'happy','1':'embarrassed','2':'anger','3':'anxiety','4':'heartbroken','5':'sad'
     else:
         return dict({'result_emotion': result_emotion, 'percent': percent})
 
@@ -145,4 +146,4 @@ https://github.com/SKTBrain/KoBERT
 
 2. Dataset    
 [Korean emotional conversation corpus](https://aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=realm&dataSetSn=86)  
-[Continuous Conversation Dataset with Korean Sentiment Information](https://aihub.or.kr/aihubdata/data/view.do? 
+[Continuous Conversation Dataset with Korean Sentiment Information](https://aihub.or.kr/aihubdata/data/view.do?)
