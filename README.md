@@ -5,7 +5,7 @@ Our model was developed using Pytorch and KOBERT.
 ## Test sentiment analysis
 
 This model shows the maximum two emotions(in 6 emotions) detected and the percentage of the responses to one conversation.
-emotions are [happy,embarrassed,anger,anxiety,heartbroken,sad
+Number of emotions are six(happy, embarrassed, anger, anxiety, heartbroken, sad).
 
 If you want to use it, you can use the [model](https://huggingface.co/hyeok212/sentiment) as follows.  
 
